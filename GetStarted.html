@@ -136,8 +136,7 @@
   
     <label class="form-label">State</label>
     <select id="state" name="state" 
-    required
-    class="form-control">
+    required> </select>class="form-control">
       <option value="AL">Alabama</option>
 <option value="AK">Alaska</option>
 <option value="AZ">Arizona</option>
@@ -195,13 +194,13 @@
     <input type="text" id="zip" name="zip">
   
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
+    <input type="email" id="email" name="email" required><br><br>
   
     <label for="loan-amount">Loan Amount:</label>
-    <input type="number" id="loan-amount" name="loan-amount"><br><br>
+    <input type="number" id="loan-amount" name="loan-amount" required><br><br>
   
     <label for="loan-purpose">Loan Purpose:</label>
-    <select id="loan-purpose" name="loan-purpose">
+    <select id="loan-purpose" name="loan-purpose" required><br><br>
       <option value="home-improvement">Home Improvement</option>
       <option value="debt-consolidation">Debt Consolidation</option>
       <option value="business">Business</option>
