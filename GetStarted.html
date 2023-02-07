@@ -22,6 +22,9 @@
       href="https://www.fiatassist.co/a_data_002/css/style.css"
     />
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+
     <!-- Responsive Stylesheet -->
     <link rel="stylesheet" href="https://www.fiatassist.co/a_data_002/css/responsive.css" />
     <!-- jQuery js -->
@@ -73,6 +76,22 @@
     <!-- ##### Header Area End ##### -->
 
     <style>
+
+.success-container {
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 48px;
+  color: green;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
       /* Style the input fields */
       input {
         padding: 10px;
@@ -346,11 +365,16 @@
 
 
     <div><input type="submit" value="Submit"></div>
+
+    <div class="success-container">
+      <div class="success-icon">
+        <i class="fa fa-check-circle"></i>
+      </div>
+      <h2 class="success-message">Your submission was successful!</h2>
+    </div>
+    
   </form>
 
-  <div id="success" style="display: none;">
-    <p>Your form has been successfully submitted!</p>
-  </div>
   
 
     <!-- ##### Footer Area Start ##### -->
