@@ -33,6 +33,41 @@
             padding: 10px;
         }
         
+        .testimonials-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.testimonial {
+  width: calc(20% - 20px);
+  margin-bottom: 40px;
+}
+
+.testimonial-image {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.testimonial-image img {
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-image::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-color: #f7f7f7;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
         </style>
         <!-- Google tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-31VL1QZ9HQ">
@@ -118,10 +153,13 @@
                 
                 <div class="sect-icon justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                     <img src="images/svg/section-icon2.svg" alt="">
-                </div>
                 <h2 class="wow fadeInUp" data-wow-delay="0.3s">In a Bit</h2>
-                <p class="wow fadeInUp" data-wow-delay="0.4s">Borrow Wave is a lending marketplace, connecting borrowers with investors since 2019 Our Platform has helped more than 4 million members get over $70 billion in personal loans so they can save money, pay down debt, and take control of their financial future. And because we don’t have any brick-and-mortar locations, we’re able to keep costs low and pass the savings back to you in the form of great interest rates.</p>
-            </div>
+                <p>At <strong>Borrow Wave</strong>, we believe that our loan service is the best available, and we're confident that we can help you achieve your financial goals.
+                     <h2>Here's why:</h2><div> <strong>Unique features:</strong> Our loan service offers a number of unique features that set us apart from other lenders. For example, we offer a fast and easy online application process that can be completed in minutes from the comfort of your own home. Additionally, we offer competitive interest rates, flexible repayment options, and personalized customer service that can help you find the right loan for your needs.</div>
+                    <div><strong>Benefits for customers:</strong> We understand that our customers have a wide range of financial needs and goals, which is why we offer loans for a variety of purposes. Whether you're looking to consolidate debt, pay for home repairs, or fund a major purchase, we can help. Our loans can also be a great option for customers with less-than-perfect credit, as we offer loans specifically designed to help improve your credit score and achieve financial stability.</div>
+                    <div><strong>Proven track record:</strong> We're proud to have a track record of success when it comes to providing loans to our customers. Our loan approval rate is among the highest in the industry, and our average interest rates are competitive and affordable. Additionally, our customers consistently rate our service highly, citing our quick and easy application process and our helpful and knowledgeable customer service representatives.</div>
+                    <div><strong>Focus on customer experience:</strong> We understand that taking out a loan can be a stressful and confusing process, which is why we place a high priority on providing a positive customer experience. Our website is easy to use and navigate, and our customer service representatives are available to help you at every step of the way. We also have a number of resources and tools available to help you make informed decisions about your loan and your finances.</div>
+                    <div><strong>Honest and transparent:</strong> Finally, we believe in being honest and transparent about our loan service. We don't make promises or guarantees that we can't keep, and we always provide clear and accurate information about our loans and our terms. We're committed to helping our customers achieve their financial goals, and we believe that our loan service is the best way to do so.</div></p>
             <div class="clearfix"></div>
             <div class="outer">
             <!--Logo-->
@@ -194,9 +232,58 @@
                 
                 </div>
             </div>
-
-        </div>
-    </section>
+<div class="testimonials-wrapper">
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="images/White Test M.png" alt="Testimonial 1">
+              </div>
+              <div class="testimonial-content">
+                <div>
+                    <p class="testimonial-text">"I was skeptical about applying for a loan online, but this website made the process so simple and easy. The application was straightforward, and I received a decision within minutes. The funds were deposited into my account in no time, and the low-interest rate made it easy to pay back. I would highly recommend this loan application website to anyone in need."</p>
+                </div>
+                <p class="testimonial-author">- David, <span class="testimonial-author-title">Realtor</span></p>
+              </div>
+            </div>
+          
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="images/Hispanic Test F.png" alt="Testimonial 2">
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">"I had a great experience using this loan application website. The application process was fast and easy, and the website was user-friendly. I appreciated the flexibility of the repayment terms, which helped me manage my finances more effectively. The customer service was exceptional, and I felt confident in my decision to use this website for my lending needs." </p>
+                <p class="testimonial-author">- Maria, <span class="testimonial-author-title">Entrepreneur</span></p>
+              </div>
+            </div>
+          
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="images/Black Test M.png" alt="Testimonial 3">
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">"I was in a tough spot and needed money fast. I was hesitant to apply for a loan, but the process on this website was so easy and straightforward. I got the money I needed in no time, and the low interest rate made it so much easier to pay back. I would definitely recommend this loan application website to anyone in need."</p>
+                <p class="testimonial-author">- Dave, <span class="testimonial-author-title">Business Owner</span></p>
+              </div>
+            </div>
+          
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="images/Black Test F.png" alt="Testimonial 4">
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">"I've used other loan application websites before, but this one was by far the best. The application process was so fast and easy, and the customer service was top-notch. I appreciated the flexibility of the repayment terms, which helped me manage my finances more effectively. I will definitely be using this loan application website in the future."</p>
+                <p class="testimonial-author">- Lara, <span class="testimonial-author-title">Restaurant Owner</span></p>
+              </div>
+            </div>
+          
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="images/white test W.png" alt="Testimonial 5">
+              </div>
+              <div class="testimonial-content">
+                <p class="testimonial-text">"I was worried about applying for a loan online, but this website made it so easy and secure. The website was user-friendly, and the application was straightforward. I was impressed with how quickly I received a decision, and the funds were deposited into my account in no time. I would recommend this loan application website to anyone looking for a reliable and trustworthy lending source."</p>
+                <p class="testimonial-author">- May, <span class="testimonial-author-title">Business Owner</span></p>
+              </div>
+             </section>
     <!-- End what we do section -->
 
     <!-- ##### About Us Area Start ##### -->
