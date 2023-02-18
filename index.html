@@ -32,43 +32,44 @@
             flex: 1;
             padding: 10px;
         }
-        
-        .testimonials-wrapper {
+
+        .testimonials-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
 }
 
 .testimonial {
-  width: calc(20% - 20px);
-  margin-bottom: 40px;
+  flex: 0 0 auto;
+  width: 100%;
+  scroll-snap-align: center;
+  margin-right: 20px;
 }
 
 .testimonial-image {
-  margin-bottom: 20px;
-  position: relative;
+  margin-bottom: 10px;
 }
 
 .testimonial-image img {
-  max-width: 100%;
-  border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: auto;
 }
 
-.testimonial-image::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background-color: #f7f7f7;
-  z-index: -1;
-  border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.testimonial-content {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-        </style>
+.testimonial-author {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+         </style>
         <!-- Google tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-31VL1QZ9HQ">
 </script>
@@ -234,60 +235,58 @@
             </div>
 
         </div>
-        <div class="testimonials-wrapper">
+        <div class="testimonials-container">
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="images/White Test M.png" alt="Testimonial 1">
               </div>
               <div class="testimonial-content">
-                <div>
-                    <p class="testimonial-text">"I was skeptical about applying for a loan online, but this website made the process so simple and easy. The application was straightforward, and I received a decision within minutes. The funds were deposited into my account in no time, and the low-interest rate made it easy to pay back. I would highly recommend this loan application website to anyone in need."</p>
-                </div>
-                <p class="testimonial-author">- David, <span class="testimonial-author-title">Realtor</span></p>
+                <p>"I was skeptical about applying for a loan online, but this website made the process so simple and easy. The application was straightforward, and I received a decision within minutes. The funds were deposited into my account in no time, and the low-interest rate made it easy to pay back. I would highly recommend this loan application website to anyone in need."</p>
+                <p class="testimonial-author">-David, Realtor</p>
               </div>
             </div>
-          
+            
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="images/Hispanic Test F.png" alt="Testimonial 2">
               </div>
               <div class="testimonial-content">
-                <p class="testimonial-text">"I had a great experience using this loan application website. The application process was fast and easy, and the website was user-friendly. I appreciated the flexibility of the repayment terms, which helped me manage my finances more effectively. The customer service was exceptional, and I felt confident in my decision to use this website for my lending needs." </p>
-                <p class="testimonial-author">- Maria, <span class="testimonial-author-title">Entrepreneur</span></p>
+                <p>"I had a great experience using this loan application website. The application process was fast and easy, and the website was user-friendly. I appreciated the flexibility of the repayment terms, which helped me manage my finances more effectively. The customer service was exceptional, and I felt confident in my decision to use this website for my lending needs."</p>
+                <p class="testimonial-author">- Maria, Entrepreneur</p>
               </div>
             </div>
-          
+            
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="images/Black Test M.png" alt="Testimonial 3">
               </div>
               <div class="testimonial-content">
-                <p class="testimonial-text">"I was in a tough spot and needed money fast. I was hesitant to apply for a loan, but the process on this website was so easy and straightforward. I got the money I needed in no time, and the low interest rate made it so much easier to pay back. I would definitely recommend this loan application website to anyone in need."</p>
-                <p class="testimonial-author">- Dave, <span class="testimonial-author-title">Business Owner</span></p>
+                <p>"I was in a tough spot and needed money fast. I was hesitant to apply for a loan, but the process on this website was so easy and straightforward. I got the money I needed in no time, and the low interest rate made it so much easier to pay back. I would definitely recommend this loan application website to anyone in need."</p>
+                <p class="testimonial-author">- Dave, Business Owner</p>
               </div>
             </div>
-          
+            
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="images/Black Test F.png" alt="Testimonial 4">
               </div>
               <div class="testimonial-content">
-                <p class="testimonial-text">"I've used other loan application websites before, but this one was by far the best. The application process was so fast and easy, and the customer service was top-notch. I appreciated the flexibility of the repayment terms, which helped me manage my finances more effectively. I will definitely be using this loan application website in the future."</p>
-                <p class="testimonial-author">- Lara, <span class="testimonial-author-title">Restaurant Owner</span></p>
+                <p>"I've used other loan application websites before, but this one was by far the best. The application process was so fast and easy, and the customer service was top-notch. I appreciated the flexibility of the repayment terms, which helped me manage my finances more effectively. I will definitely be using this loan application website in the future."</p>
+                <p class="testimonial-author">- Lara, Restaurant Owner</p>
               </div>
             </div>
-          
+            
             <div class="testimonial">
               <div class="testimonial-image">
                 <img src="images/white test W.png" alt="Testimonial 5">
               </div>
               <div class="testimonial-content">
-                <p class="testimonial-text">"I was worried about applying for a loan online, but this website made it so easy and secure. The website was user-friendly, and the application was straightforward. I was impressed with how quickly I received a decision, and the funds were deposited into my account in no time. I would recommend this loan application website to anyone looking for a reliable and trustworthy lending source."</p>
-                <p class="testimonial-author">- May, <span class="testimonial-author-title">Business Owner</span></p>
+                <p>"I was worried about applying for a loan online, but this website made it so easy and secure. The website was user-friendly, and the application was straightforward. I was impressed with how quickly I received a decision, and the funds were deposited into my account in no time. I would recommend this loan application website to anyone looking for a reliable and trustworthy lending source."</p>
+                <p class="testimonial-author">- May, Restaurant Owner</p>
               </div>
             </div>
           </div>
-          
+    
     </section>
     <!-- End what we do section -->
 
